@@ -15,11 +15,13 @@ const MainDraft = () => {
     <div className='MainDraft'>
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path="/" element={<ChapterOne />} />
-          <Route path="/two" element={<ChapterTwo />} />
-          <Route path="/three" element={<ChapterThree />} />
-        </Routes>
+        <div className='content'>
+          <Routes>
+            <Route path="/" element={<ChapterOne />} />
+            <Route path="/two" element={<ChapterTwo />} />
+            <Route path="/three" element={<ChapterThree />} />
+          </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
     </div>

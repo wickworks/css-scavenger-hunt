@@ -1,0 +1,64 @@
+@import './colors';
+@import './fonts';
+
+@mixin chapter {
+  border-top: 2px solid $concrete_violet_dark;
+  border-bottom: 2px solid $concrete_violet_dark;
+  padding: 20px;
+  display: flex;
+
+  h2 {
+    @include section_title;
+    border: none;
+  }
+
+  .topbox {
+    padding: 20px;
+    background-color: $concrete_violet_light;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
+@mixin sassy_linkbar {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 20px 0;
+
+  a {
+    color: $concrete_violet;
+    font-family: monospace;
+    font-size: 24px;
+  }
+
+  .chapters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    .one a {
+      color: $concrete_violet;
+      font-family: serif;
+    }
+
+    .two a {
+      color: $crushed_velvet;
+      font-family: serif;
+    }
+
+    .three a {
+      color: $periwinkle;
+      font-family: serif;
+    }
+  }
+}
+
+@mixin bibliography {
+  p {
+    @include subtext;
+    margin: 4px 0;
+  }
+}

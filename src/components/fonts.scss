@@ -1,0 +1,64 @@
+
+@mixin font_serif {
+  font-family: serif;
+}
+
+@mixin font_sans {
+  font-family: sans-serif;
+}
+
+@mixin font_mono {
+  font-family: monospace;
+}
+
+@mixin font_fantasy {
+  font-family: fantasy;
+}
+
+@mixin paragraph {
+  @include font_sans;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@mixin subtext {
+  @include font_sans;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+@mixin h1 {
+  @include font_mono;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+
+  border-bottom: 2px solid black;
+}
+
+@mixin section_title {
+  @include font_fantasy;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+@mixin h2 {
+  @include font_mono;
+  font-size: 24px;
+  font-weight: 400;
+
+  border-bottom: 2px solid black;
+}
+
+@mixin h3 {
+  @include font_serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+@mixin h4 {
+  @include font_sans;
+  font-size: 20px;
+  font-weight: 400;
+}

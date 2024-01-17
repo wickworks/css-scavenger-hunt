@@ -1,4 +1,6 @@
+@import './mixins';
 
 .ChapterOne {
-  background-color: salmon;
+  @include chapter;
+  background-color: $parchment_mid;
 }

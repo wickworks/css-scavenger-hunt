@@ -1,0 +1,10 @@
+@import './mixins';
+
+span {
+  @include paragraph;
+  font-style: italic;
+  text-align: center;
+  font-size: 12px;
+
+  a#contact { font-size: 12px; }
+}

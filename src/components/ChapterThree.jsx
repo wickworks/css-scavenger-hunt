@@ -8,7 +8,7 @@ const ChapterThree = () => {
     <div className='ChapterThree'>
 
 
-      <div className='chapterbox'>
+      <div className='content'>
         <h2>
           Chapter III. Socialist and Communist Literature
         </h2>

@@ -1,4 +1,14 @@
+@import './mixins';
 
 .Header {
-  background-color: salmon;
+  background-color: $parchment_mid;
+
+  h1 {
+    border-bottom: none;
+  }
+}
+
+
+.Header, .Footer {
+  padding: 20px;
 }

@@ -1,4 +1,15 @@
+@import './mixins';
 
 .Footer {
-  background-color: salmon;
+  background-color: $parchment_mid;
+
+  .credits {
+    @include bibliography;
+    @include subtext;
+    margin: 4px 0;
+  }
+
+  .additional-reading {
+    @include sassy_linkbar;
+  }
 }

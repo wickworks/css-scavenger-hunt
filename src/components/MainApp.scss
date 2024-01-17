@@ -1,4 +1,30 @@
+@import './mixins';
 
 .MainDraft {
-  background-color: #dedede;
+  background-color: $rust;
+  padding: 20px;
+
+  a {
+    @include paragraph;
+  }
+
+  .content {
+    border: 2px solid white;
+
+    .ChapterTwo {
+      background-color: $parchment_mid;      
+    }
+  }
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+p {
+  @include paragraph;
 }

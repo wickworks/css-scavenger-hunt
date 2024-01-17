@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import LinkBar from './LinkBar.jsx';
+import Copyright from './Copyright.jsx';
 
 import './Footer.scss';
 
@@ -8,11 +9,7 @@ const Footer = () => {
   return (
     <div className='Footer'>
 
-      <div className='chapters`'>
-        <Link to='/'>Chapter One</Link>
-        <Link to='two'>Chapter Two</Link>
-        <Link to='three'>Chapter Three</Link>
-      </div>
+      <LinkBar />
 
       <div className='credits'>
 
@@ -26,6 +23,16 @@ const Footer = () => {
         <p><strong>See </strong>Note in: Marx Engels Collected Works.</p>
       </div>
 
+      <h3>Additional Reading</h3>
+      <div className='additional-reading'>
+        <a href='/'>Communist Confession of Faith</a>
+        <a href='/'>Principles of Communism</a>
+        <a href='/'>Demands of Communist Party in Germany</a>
+        <a href='/'>Study Guide</a>
+        <a href='/'>Marx-Engels Archive</a>
+      </div>
+
+      <Copyright />
     </div>
   )
 }

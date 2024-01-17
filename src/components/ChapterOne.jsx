@@ -20,7 +20,7 @@ const ChapterOne = () => {
         </ul>
       </div>
 
-      <div className='chapterbox'>
+      <div className='content'>
         <h2>
           Chapter I. Bourgeois and Proletarians
         </h2>

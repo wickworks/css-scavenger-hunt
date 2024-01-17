@@ -1,4 +1,16 @@
+@import './mixins';
 
 .ChapterThree {
-  background-color: salmon;
+  @include chapter;
+  background-color: #ce7a67;
+
+  .chapterbox {
+    h3 {
+      @include h3;
+    }
+  }
+
+  h4 {
+    @include h4;
+  }
 }

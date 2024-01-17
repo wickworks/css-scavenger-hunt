@@ -1,0 +1,5 @@
+@import './mixins';
+
+.LinkBar {
+  @include sassy_linkbar;
+}
