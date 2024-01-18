@@ -1,5 +1,6 @@
 import React from 'react';
 import LinkBar from './LinkBar.jsx';
+import {Donate} from './Copyright.jsx';
 
 import './Header.scss';
 
@@ -12,7 +13,7 @@ const Header = () => {
       </h1>
 
       <LinkBar />
-
+      <Donate />
 
     </div>
   )

@@ -6,5 +6,12 @@ span {
   text-align: center;
   font-size: 12px;
 
-  a#contact { font-size: 12px; }
+  a#contact, a#donate {
+    color: $periwinkle;
+    font-size: 12px;
+  }
+
+  a#donate {
+    display: block;
+  }
 }

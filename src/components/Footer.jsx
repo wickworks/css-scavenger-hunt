@@ -1,6 +1,6 @@
 import React from 'react';
 import LinkBar from './LinkBar.jsx';
-import Copyright from './Copyright.jsx';
+import {Copyright, Donate} from './Copyright.jsx';
 
 import './Footer.scss';
 
@@ -33,6 +33,7 @@ const Footer = () => {
       </div>
 
       <Copyright />
+      <Donate />
     </div>
   )
 }
